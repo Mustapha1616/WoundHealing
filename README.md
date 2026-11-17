@@ -9,7 +9,8 @@ and to run the wound healing simulations reported in the paper.
 We study the cell density $n(x,t)$ governed by
 
 $$
-n_t \;=\; \alpha\, n_{xx} 
+n_t = \alpha n_{xx} - \partial_x\!\big(nV[n]\big) + n(1-n),
+
 $$
 
 with adhesion law $g(n)=n(\lambda-n)$ and the odd sensing kernel
