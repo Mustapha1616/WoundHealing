@@ -9,7 +9,7 @@ and to run the wound healing simulations reported in the paper.
 We study the cell density $n(x,t)$ governed by
 
 $$
-n_t \;=\; \alpha\, n_{xx} \;-\; \partial_x\!\big(n\,V[n]\big) \;+\; n(1-n),
+n_t \;=\; \alpha\, n_{xx} \;-\; \partial_x\!\big(n\,Vn\big) \;+\; n(1-n),
 \qquad
 V[n](x,t) \;=\; \int_{-\rho}^{\rho} g\big(n^{e}(x+\xi,t)\big)\,h(\xi)\,d\xi ,
 $$
@@ -47,21 +47,6 @@ value $n\equiv 1$ on an exterior collar of width $\rho$.
   direct evaluation of the adhesion integral, and fourth-order Runge–Kutta
   time integration.
 
-## Repository structure
-
-```
-[ADJUST to match your actual layout]
-
-src/
-  dispersion.[py|m]    whole-line sigma(k), F(rho;lambda), rho_c^inf, wavelength
-  spectrum.[py|m]      Galerkin matrix for A_{L,rho,lambda}, s_L(rho;lambda)
-  thresholds.[py|m]    bisection for rho_c^(L), L_lin; formula for L_stab
-  solver.[py|m]        FC + RK4 time integration of the bounded problem
-  kernel.[py|m]        arctangent kernel h, H_rho, J_rho
-scripts/
-  figure1.[py|m]       ...
-  figure2.[py|m]       ...
-```
 
 
 ## Reference values
