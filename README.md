@@ -25,7 +25,7 @@ value $n\equiv 1$ on an exterior collar of width $\rho$.
 | Parameter | Meaning |
 |---|---|
 | `alpha` | random cell motility (diffusion) |
-| `lambda` | cell–cell adhesion strength |
+| `lambda` | cell-cell adhesion strength |
 | `rho` | sensing radius |
 | `L` | domain half-length |
 
