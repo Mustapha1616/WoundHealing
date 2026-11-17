@@ -16,7 +16,7 @@ $$
 with adhesion law $g(n)=n(\lambda-n)$ and the odd sensing kernel
 
 $$
-h(\xi) \;=\; \frac{0.1\,\arctan(0.2\xi)}{\arctan 2}, \qquad |\xi|\le\rho .
+h(\xi) = \frac{0.1\arctan(0.2\xi)}{\arctan 2}, \qquad |\xi|\le\rho .
 $$
 
 On the bounded interval $\Omega=(-L,L)$ the density is prescribed at the healed
