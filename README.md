@@ -34,16 +34,16 @@ value $n\equiv 1$ on an exterior collar of width $\rho$.
 - **Whole-line linear stability.** The dispersion relation $\sigma(k;\rho,\lambda)$,
   the largest growth rate $F(\rho;\lambda)$, the critical sensing radius
   $\rho_c^{\infty}(\lambda)$, and the associated wavelength $\ell_c$.
-- **Bounded-domain spectrum.** Galerkin discretisation of the linearised
+- **Bounded domain spectrum.** Galerkin discretisation of the linearised
   operator $\mathcal{A}_{L,\rho,\lambda}$ in the Dirichlet sine basis, its
   largest eigenvalue $s_L(\rho;\lambda)$, and the critical eigenfunction.
-- **Bounded-domain thresholds.** The critical sensing radius $\rho_c^{(L)}(\lambda)$
+- **Bounded domain thresholds.** The critical sensing radius $\rho_c^{(L)}(\lambda)$
   and the linear length threshold $L_{\mathrm{lin}}(\rho,\lambda)$, located by
   bisection.
 - **Nonlinear sufficient bound.** The decay rate $\mu_L$ and the sufficient
   half-length $L_{\mathrm{stab}}(\lambda,\rho)$.
-- **Time-dependent simulations.** Fourier-continuation spatial derivatives,
-  direct evaluation of the adhesion integral, and fourth-order Runge–Kutta
+- **Time-dependent simulations.** Fourier continuation spatial derivatives,
+  direct evaluation of the adhesion integral, and fourth-order Runge-Kutta
   time integration.
 
 
@@ -60,8 +60,3 @@ Computed with the default parameters ($\alpha=1$, arctangent kernel):
 These can be used to check that a fresh installation reproduces the published
 numbers.
 
-
-## Contact
-
-Ilyas Mustapha — `ilyasm@wustl.edu`
-Department of Mathematics, Washington University in St. Louis
