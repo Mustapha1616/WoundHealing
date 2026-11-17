@@ -38,7 +38,7 @@ value $n\equiv 1$ on an exterior collar of width $\rho$.
   operator $\mathcal{A}_{L,\rho,\lambda}$ in the Dirichlet sine basis, its
   largest eigenvalue $s_L(\rho;\lambda)$, and the critical eigenfunction.
 - **Bounded domain thresholds.** The critical sensing radius $\rho_c^{(L)}(\lambda)$
-  and the linear length threshold $L_{\mathrm{lin}}(\rho,\lambda)$, located by
+  and the linear length threshold $L_c(\rho,\lambda)$, located by
   bisection.
 - **Nonlinear sufficient bound.** The decay rate $\mu_L$ and the sufficient
   half-length $L_{\mathrm{stab}}(\lambda,\rho)$.
