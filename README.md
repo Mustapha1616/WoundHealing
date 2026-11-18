@@ -1,8 +1,7 @@
 # Nonlocal Wound Healing on Bounded Domains
-Stability thresholds and simulations for a nonlocal advection diffusion model of wound healing on bounded domains
+This is a code repository for the manuscript _Stability analysis and critical thresholds in a nonlocal advection diffusion model of wound healing on bounded domains_ by Ilyas Mustapha and Mikayla Gregory.
 
-The repository contains the routines used to compute the stability thresholds
-and to run the wound healing simulations reported in the paper.
+The repository contains the routines used to compute the stability thresholds and to run the wound healing simulations reported in the paper.
 
 ## The model
 
@@ -19,8 +18,7 @@ $$
 h(\xi) = \frac{0.1\arctan(0.2\xi)}{\arctan 2}, \qquad |\xi|\le\rho .
 $$
 
-On the bounded interval $\Omega=(-L,L)$ the density is prescribed at the healed
-value $n\equiv 1$ on an exterior collar of width $\rho$.
+On the bounded interval $\Omega=(-L,L)$ the density is prescribed at the healed value $n\equiv 1$ on an exterior collar of width $\rho$.
 
 | Parameter | Meaning |
 |---|---|
