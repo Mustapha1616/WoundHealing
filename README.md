@@ -7,9 +7,9 @@ This repository accompanies the manuscript *Stability analysis and critical thre
 On the interval $\Omega=(-L,L)$, the cell density $n(x,t)$ satisfies
 
 $$
-n_t = \alpha n_{xx} - \partial_x\!\left(nV[n]\right) + n(1-n),
+n_t = \alpha n_{xx} - \partial_x\left(nV[n]\right) + n(1-n),
 \qquad
-V[n](x,t) = \int_{-\rho}^{\rho} g\!\left(n^e(x+\xi,t)\right)h(\xi)\,d\xi.
+V[n] (x,t) = \int_{-\rho}^{\rho} g\left(n^e(x+\xi,t)\right)h(\xi)\,d\xi.
 $$
 
 The endpoint values are $n(\pm L,t)=1$. In the adhesion integral, $n^e$ equals $n$ inside the interval and equals $1$ on the exterior collar of width $\rho$ at each end. The constant density $n\equiv1$ is the healed equilibrium. The adhesion law and the odd sensing kernel are
