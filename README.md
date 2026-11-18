@@ -21,19 +21,19 @@ $$
 
 | Parameter | Meaning |
 | --- | --- |
-| $\alpha$ (`alpha`) | Cell diffusion coefficient; the time-dependent solver uses $\alpha=1$. |
-| $\lambda$ (`lam`) | Cell–cell adhesion parameter. |
-| $\rho$ (`rho`) | Sensing radius. |
-| $L$ (`L`) | Domain half-length; the full interval has length $2L$. |
+| $\alpha$ | Cell diffusion coefficient; the time-dependent solver uses $\alpha=1$. |
+| $\lambda$ | Cell-cell adhesion parameter. |
+| $\rho$ | Sensing radius. |
+| $L$ | Domain half-length; the full interval has length $2L$. |
 
 
 ## What the code computes
 
-- **Whole-line stability.** Maximizing the dispersion relation $\sigma(k;\rho,\lambda)$ over wavenumbers gives the largest linear growth rate $F(\rho;\lambda)$. At the critical sensing radius $\rho_c^\infty(\lambda)$, the code also computes the critical wavenumber $k_c$ and wavelength $2\pi/k_c$.
-- **Bounded-domain stability.** A Galerkin method in the Dirichlet sine basis computes the largest eigenvalue $s_L(\rho;\lambda)$ of the linearized operator and its associated eigenfunction. The critical radius $\rho_c^{(L)}(\lambda)$ marks the onset of positive linear growth as $\rho$ varies. The critical half-length $L_c(\rho,\lambda)$ marks the loss of strict exponential stability as $L$ increases.
+- **Whole line stability.** Maximizing the dispersion relation $\sigma(k;\rho,\lambda)$ over wavenumbers gives the largest linear growth rate $F(\rho;\lambda)$. At the critical sensing radius $\rho_c^\infty(\lambda)$, the code also computes the critical wavenumber $k_c$ and wavelength $2\pi/k_c$.
+- **Bounded domain stability.** A Galerkin method in the Dirichlet sine basis computes the largest eigenvalue $s_L(\rho;\lambda)$ of the linearized operator and its associated eigenfunction. The critical radius $\rho_c^{(L)}(\lambda)$ marks the onset of positive linear growth as $\rho$ varies. The critical half-length $L_c(\rho,\lambda)$ marks the loss of strict exponential stability as $L$ increases.
 - **Sufficient condition for healing.** For $L<L_{\mathrm{stab}}(\lambda,\rho)$, the analysis gives a positive decay rate $\mu_L$ for any sufficiently regular solution that exists globally and stays in the assumed density interval. Healing can also occur for larger $L$.
 
-The time-dependent solver uses Fourier continuation for diffusion and classical fourth-order Runge–Kutta (RK4) for time stepping. It computes the adhesion velocity by piecewise-linear product integration, using eight-point Gauss–Legendre quadrature for the weights and a zero-padded FFT for the convolution. For the derivative of the adhesion flux $nV[n]$, the recovery experiment (Figure 4) uses a second-order centered difference; the modal and small-wound experiments (Figures 2 and 5) use Fourier continuation.
+The time-dependent solver uses Fourier continuation for diffusion and classical fourth-order Runge-Kutta (RK4) for time stepping.
 
 ## Reproducing the results
 
@@ -44,7 +44,7 @@ python3 -m pip install numpy scipy matplotlib
 python3 plot_initial_wound.py --no-show
 ```
 
-This writes `solution_storage/initial_wound.pdf`. To generate the spectral threshold figure, run `python3 wound_stability.py --no-show`. Neither figure requires the time-dependent solver.
+This writes `solution_storage/initial_wound.pdf`. To generate the spectral threshold figure, run `python3 wound_stability.py --no-show`.
 
 Figures 2, 4, and 5 also require `wound_healing.py`, `adhesion_product.py`, and the project's `fc` and `scalar_multipliers` modules. Keep these modules alongside the figure scripts or add their directory to `PYTHONPATH` so Python can import them.
 
