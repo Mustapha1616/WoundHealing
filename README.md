@@ -1,7 +1,10 @@
 # Nonlocal Wound Healing on Bounded Domains
-This is a code repository for the manuscript _Stability analysis and critical thresholds in a nonlocal advection diffusion model of wound healing on bounded domains_ by Ilyas Mustapha and Mikayla Gregory.
+This is a code repository for the manuscript _Stability analysis 
+and critical thresholds in a nonlocal advection diffusion model 
+of wound healing on bounded domains_ by Ilyas Mustapha and Mikayla Gregory.
 
-The repository contains the routines used to compute the stability thresholds and to run the wound healing simulations reported in the paper.
+The repository contains the routines used to compute the stability 
+thresholds and to run the wound healing simulations reported in the paper.
 
 ## The model
 
