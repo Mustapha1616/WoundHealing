@@ -21,7 +21,7 @@ $$
 h(\xi) = \frac{0.1\arctan(0.2\xi)}{\arctan 2}, \qquad |\xi|\le\rho .
 $$
 
-On the bounded interval $\Omega=(-L,L)$ the density is prescribed at the healed value $n\equiv 1$ on an exterior collar of width $\rho$.
+On the bounded interval $\Omega=(-L,L)$, the density is prescribed at the healed value $n\equiv 1$ on an exterior collar of width $\rho$.
 
 | Parameter | Meaning |
 |---|---|
