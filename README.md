@@ -48,6 +48,21 @@ On the bounded interval $\Omega=(-L,L)$, the density is prescribed at the healed
   time integration.
 
 
+## Reproducing the results
+
+The first five entries reproduce Figures 1–5, in order, and save the PDFs in `solution_storage/`. The last two entries identify the functions used for the stability calculations.
+
+| Script or function | Produces |
+| --- | --- |
+| `wound_stability.py` | Growth rate curves for the whole line and bounded intervals, showing the critical sensing radii $\rho_c^\infty$ and $\rho_c^{(L)}$ and the critical domain half-length $L_c$. |
+| `run_modal_validation.py` | Normalized amplitudes of the leading mode compared with $e^{s_L t}$: decay at $\rho=16$ and growth at $\rho=18$ for $L=100$ and $\lambda=5$. |
+| `plot_initial_wound.py` | The initial wound profile $n_0(x)=1-0.75\exp[-(0.1x)^6]$ together with the healthy density $n=1$. |
+| `run_wound_recovery.py` | Wound recovery profiles and error histories for $L=30,100,200$, with observed healing times when the numerical healing criterion is met. |
+| `run_small_wound_bounds.py` | The sufficient decay rate $\mu_L$ versus $L/L_{\mathrm{stab}}$, and the normalized small wound errors $E_L(t)/E_L(0)$ compared with the conditional bound $e^{-\mu_L t}$ when $\mu_L>0$. |
+| `wound_stability.py`: `compute_s_L()` | The largest eigenvalue $s_L(\rho;\lambda)$ of the bounded linearized operator and the sine coefficients of its normalized eigenfunction (Algorithm 1). |
+| `wound_stability.py`: `critical_parameter()` | A critical sensing radius or domain half-length located by bisection, together with the critical wavenumber on the whole line or the critical eigenfunction on the bounded interval (Algorithm 2). |
+
+
 
 ## Reference values
 
