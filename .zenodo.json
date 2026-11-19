@@ -1,6 +1,6 @@
 {
   "title": "Nonlocal Wound Healing on Bounded Domains: Stability Thresholds and Recovery Simulations",
-  "description": "Python code accompanying the manuscript “Stability analysis and critical thresholds in a nonlocal advection diffusion model of wound healing on bounded domains.” The code computes critical sensing radii for linear instability on the whole line and on bounded intervals. It also computes the critical domain half-length for loss of linear exponential stability of the healed state and simulates wound recovery with the cell density fixed at 1 at both endpoints and on the exterior collar.",
+  "description": "Python code accompanying the manuscript <em>Stability analysis and critical thresholds in a nonlocal advection diffusion model of wound healing on bounded domains</em>. The code computes critical sensing radii for linear instability on the whole line and on bounded intervals. It also computes the critical domain half-length for loss of linear exponential stability of the healed state and simulates wound recovery with the cell density fixed at 1 at both endpoints and on the exterior collar.",
   "upload_type": "software",
   "creators": [
     {
